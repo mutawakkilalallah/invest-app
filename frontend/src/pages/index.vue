@@ -75,17 +75,17 @@
               <tr>
                 <td>Return (USD)</td>
                 <td>:</td>
-                <td class="font-weight-bold" :class="data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;${{ data.data.return_in_usd }}</td>
+                <td class="font-weight-bold" :class="+data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;${{ data.data.return_in_usd }}</td>
               </tr>
               <tr>
                 <td>Return (Stock)</td>
                 <td>:</td>
-                <td class="font-weight-bold" :class="data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;{{ data.data.return_in_stock }}</td>
+                <td class="font-weight-bold" :class="+data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;{{ data.data.return_in_stock }}</td>
               </tr>
               <tr>
                 <td>Percentage</td>
                 <td>:</td>
-                <td class="font-weight-bold" :class="data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;{{ data.data.percentage }}%</td>
+                <td class="font-weight-bold" :class="+data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;{{ data.data.percentage }}%</td>
               </tr>
               <tr>
                 <td>Kurs Now</td>
@@ -95,7 +95,7 @@
               <tr>
                 <td>Return (IDR)</td>
                 <td>:</td>
-                <td class="font-weight-bold" :class="data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;Rp. {{ data.data.return_in_idr }}</td>
+                <td class="font-weight-bold" :class="+data.data.return_in_usd < 0 ? 'text-red' : 'text-green'">&nbsp;Rp. {{ data.data.return_in_idr }}</td>
               </tr>
             </tbody>
             <pre>{{ data.note }}</pre>
