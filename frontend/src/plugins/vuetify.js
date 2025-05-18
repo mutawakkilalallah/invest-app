@@ -20,6 +20,6 @@ export default createVuetify({
     ...labsComponents,
   },
   theme: {
-    defaultTheme: 'light',
+    defaultTheme: 'dark',
   },
 });

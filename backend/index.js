@@ -52,6 +52,7 @@ app.post("/api/calculator", async (req, res) => {
         code,
         capital: toRupiah(capital),
         currency_buy: toRupiah(currencyBuy.value),
+        capital_in_usd: toUsd(capitalInUsd),
         price_buy: priceBuy,
         stock: toUsd(stock),
         price_now: priceNow,
