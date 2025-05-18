@@ -85,7 +85,7 @@
               <tr>
                 <td>Percentage</td>
                 <td>:</td>
-                <td class="font-weight-bold" :class="parseFloat(data.data.return_in_stock.replace(/,/g, '')) < 0 ? 'text-red' : 'text-green'">&nbsp;{{ data.data.return_in_stock }}%</td>
+                <td class="font-weight-bold" :class="parseFloat(data.data.percentage.replace(/,/g, '')) < 0 ? 'text-red' : 'text-green'">&nbsp;{{ data.data.percentage }}%</td>
               </tr>
               <tr>
                 <td>Kurs Now</td>
@@ -95,7 +95,7 @@
               <tr>
                 <td>Return (IDR)</td>
                 <td>:</td>
-                <td class="font-weight-bold" :class="parseFloat(data.data.return_in_stock.replace(/,/g, '')) < 0 ? 'text-red' : 'text-green'">&nbsp;Rp. {{ data.data.return_in_stock }}</td>
+                <td class="font-weight-bold" :class="parseFloat(data.data.return_in_idr.replace(/,/g, '')) < 0 ? 'text-red' : 'text-green'">&nbsp;Rp. {{ data.data.return_in_idr }}</td>
               </tr>
             </tbody>
             <pre>{{ data.note }}</pre>
