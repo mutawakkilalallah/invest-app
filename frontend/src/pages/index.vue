@@ -36,7 +36,7 @@
     </v-col>
     <v-col class="px-4" cols="12" sm="6">
       <v-card v-if="data.data">
-        <v-card-text>
+        <v-card-text class="text-caption">
           <tbody>
             <tr>
               <td>TYPE</td>
@@ -126,7 +126,7 @@
   </v-row>
   <v-row class="px-2">
     <v-col class="px-4" cols="12" sm="6">
-      <v-table v-if="portofolio.length > 0" density="compact">
+      <v-table v-if="portofolio.length > 0" density="compact" class="text-caption mb-8">
         <thead>
           <tr>
             <th class="text-center">
@@ -150,13 +150,13 @@
           >
             <td class="text-center">{{ i+1 }}</td>
             <td class="text-left">{{ item.name.toUpperCase() }}</td>
-            <td class="text-right">Rp. {{ item.capital }}</td>
-            <td class="text-right">Rp. {{ item.return }}</td>
+            <td class="text-right">{{ item.capital }}</td>
+            <td class="text-right">{{ item.return }}</td>
           </tr>
           <tr>
             <td class="text-center font-weight-bold" colspan="2">TOTAL</td>
-            <td class="text-right">Rp. {{ new Intl.NumberFormat('id-ID').format(totalCapital) }}</td>
-            <td class="text-right" :class="totalReturn < 0 ? 'text-red' : 'text-green'">Rp. {{ new Intl.NumberFormat('id-ID').format(totalReturn) }}</td>
+            <td class="text-right">{{ new Intl.NumberFormat('id-ID').format(totalCapital) }}</td>
+            <td class="text-right" :class="totalReturn < 0 ? 'text-red' : 'text-green'">{{ new Intl.NumberFormat('id-ID').format(totalReturn) }}</td>
           </tr>
         </tbody>
       </v-table>
